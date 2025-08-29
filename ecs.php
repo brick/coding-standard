@@ -192,9 +192,13 @@ return static function (ECSConfig $ecsConfig): void {
                 '@internal,@deprecated',
                 '@link,@see,@uses',
                 '@dataProvider',
+                '@template',
                 '@param',
                 '@return',
                 '@throws',
+                '@psalm-assert,@psalm-assert-if-true,@psalm-assert-if-false',
+                '@phpstan-assert,@phpstan-assert-if-true,@phpstan-assert-if-false',
+                '@psalm-suppress',
             ],
         ],
     );
