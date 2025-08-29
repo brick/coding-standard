@@ -1,4 +1,4 @@
-name: Coding Standards
+name: Coding Standard
 
 on:
   workflow_call:
@@ -15,8 +15,8 @@ on:
         type: "string"
 
 jobs:
-  coding-standards:
-    name: Coding Standards
+  coding-standard:
+    name: Coding Standard
     runs-on: ubuntu-latest
 
     strategy:
