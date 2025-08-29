@@ -234,4 +234,21 @@ return static function (ECSConfig $ecsConfig): void {
             'ignoreSpacesInAnnotation' => true,
         ]
     );
+
+    $ecsConfig->skip([
+        // Only interested in FunctionCommentSniff.ParamCommentFullStop, excludes the rest
+        FunctionCommentSniff::class . '.Missing' => null,
+        FunctionCommentSniff::class . '.MissingReturn' => null,
+        FunctionCommentSniff::class . '.MissingParamTag' => null,
+        FunctionCommentSniff::class . '.EmptyThrows' => null,
+        FunctionCommentSniff::class . '.IncorrectParamVarName' => null,
+        FunctionCommentSniff::class . '.IncorrectTypeHint' => null,
+        FunctionCommentSniff::class . '.MissingParamComment' => null,
+        FunctionCommentSniff::class . '.ParamNameNoMatch' => null,
+        FunctionCommentSniff::class . '.InvalidReturn' => null,
+
+        // Keep a line between same use types, spacing around uses is done in other fixers
+        UseSpacingSniff::class . '.IncorrectLinesCountBeforeFirstUse' => null,
+        UseSpacingSniff::class . '.IncorrectLinesCountAfterLastUse' => null,
+    ]);
 };
