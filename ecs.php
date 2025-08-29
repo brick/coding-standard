@@ -226,7 +226,7 @@ return static function (ECSConfig $ecsConfig): void {
     $ecsConfig->ruleWithConfiguration(
         DuplicateSpacesSniff::class,
         [
-            'ignoreSpacesInAnnotation' => 1,
+            'ignoreSpacesInAnnotation' => true,
         ]
     );
 };
