@@ -1,6 +1,6 @@
 {
-    "name": "brick/coding-standards",
-    "description": "Coding standards tools and configurations used in Brick organization.",
+    "name": "brick/coding-standard",
+    "description": "Coding standard tools and configurations used in Brick organization.",
     "type": "library",
     "keywords": [
         "brick",
