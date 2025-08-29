@@ -53,7 +53,6 @@ use PhpCsFixer\Fixer\Phpdoc\PhpdocNoUselessInheritdocFixer;
 use PhpCsFixer\Fixer\Phpdoc\PhpdocOrderByValueFixer;
 use PhpCsFixer\Fixer\Phpdoc\PhpdocReturnSelfReferenceFixer;
 use PhpCsFixer\Fixer\Phpdoc\PhpdocScalarFixer;
-use PhpCsFixer\Fixer\Phpdoc\PhpdocSeparationFixer;
 use PhpCsFixer\Fixer\Phpdoc\PhpdocSingleLineVarSpacingFixer;
 use PhpCsFixer\Fixer\Phpdoc\PhpdocSummaryFixer;
 use PhpCsFixer\Fixer\Phpdoc\PhpdocTagCasingFixer;
@@ -137,7 +136,6 @@ return static function (ECSConfig $ecsConfig): void {
             PhpdocOrderByValueFixer::class,
             PhpdocReturnSelfReferenceFixer::class,
             PhpdocScalarFixer::class,
-            PhpdocSeparationFixer::class,
             PhpdocSingleLineVarSpacingFixer::class,
             PhpdocTagCasingFixer::class,
             PhpdocSummaryFixer::class,
@@ -193,6 +191,9 @@ return static function (ECSConfig $ecsConfig): void {
                 '@link,@see,@uses',
                 '@dataProvider',
                 '@template',
+                '@extends,@template-extends',
+                '@implements,@template-implements',
+                '@final',
                 '@param',
                 '@return',
                 '@throws',
