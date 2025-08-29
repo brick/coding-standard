@@ -197,9 +197,11 @@ return static function (ECSConfig $ecsConfig): void {
                 '@param',
                 '@return',
                 '@throws',
+                '@pure',
                 '@psalm-assert,@psalm-assert-if-true,@psalm-assert-if-false',
                 '@phpstan-assert,@phpstan-assert-if-true,@phpstan-assert-if-false',
                 '@psalm-suppress',
+                '@codeCoverageIgnore',
             ],
         ],
     );
