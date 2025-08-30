@@ -86,7 +86,6 @@ use Symplify\EasyCodingStandard\Config\ECSConfig;
 use Symplify\EasyCodingStandard\ValueObject\Set\SetList;
 
 return static function (ECSConfig $ecsConfig): void {
-
     $ecsConfig->indentation('spaces');
 
     $ecsConfig->sets([
@@ -227,14 +226,14 @@ return static function (ECSConfig $ecsConfig): void {
             'linesCountAfterLastUse' => 0,
             'linesCountBetweenUseTypes' => 1,
             'linesCountBeforeFirstUse' => 0,
-        ]
+        ],
     );
 
     $ecsConfig->ruleWithConfiguration(
         DuplicateSpacesSniff::class,
         [
             'ignoreSpacesInAnnotation' => true,
-        ]
+        ],
     );
 
     $ecsConfig->skip([
