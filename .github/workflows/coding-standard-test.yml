@@ -1,0 +1,23 @@
+# This workflow is used to test the main workflow on this repository.
+# It is not designed to be used by other repositories.
+name: Test
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  coding-standard-test:
+    name: Coding Standard Test
+    strategy:
+      fail-fast: false
+      matrix:
+        php-version:
+          - "8.1"
+          - "8.2"
+          - "8.3"
+          - "8.4"
+    uses: ./.github/workflows/coding-standard.yml
+    with:
+      php-version: ${{ matrix.php-version }}
+      config-file: ecs-test.php
