@@ -13,6 +13,16 @@ on:
         default: "--prefer-dist"
         required: false
         type: "string"
+      working-directory:
+        description: "The working directory to run composer install in."
+        default: "."
+        required: false
+        type: "string"
+      config-file:
+        description: "The path to the ECS config file, relative to the working directory."
+        default: "ecs.php"
+        required: false
+        type: "string"
 
 jobs:
   coding-standard:
@@ -37,8 +47,9 @@ jobs:
       - name: Install composer dependencies
         uses: "ramsey/composer-install@v2"
         with:
-          working-directory: "tools/ecs"
+          working-directory: "${{ inputs.working-directory }}"
           composer-options: "${{ inputs.composer-options }}"
 
       - name: Run ECS
-        run: tools/ecs/vendor/bin/ecs check --config tools/ecs/ecs.php
+        working-directory: "${{ inputs.working-directory }}"
+        run: "vendor/bin/ecs --config=${{ inputs.config-file }}"
