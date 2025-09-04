@@ -20,7 +20,6 @@ use PhpCsFixer\Fixer\ClassNotation\OrderedClassElementsFixer;
 use PhpCsFixer\Fixer\ClassNotation\OrderedTypesFixer;
 use PhpCsFixer\Fixer\Comment\CommentToPhpdocFixer;
 use PhpCsFixer\Fixer\Comment\SingleLineCommentStyleFixer;
-use PhpCsFixer\Fixer\ConstantNotation\NativeConstantInvocationFixer;
 use PhpCsFixer\Fixer\ControlStructure\IncludeFixer;
 use PhpCsFixer\Fixer\ControlStructure\NoUnneededControlParenthesesFixer;
 use PhpCsFixer\Fixer\ControlStructure\TrailingCommaInMultilineFixer;
@@ -105,7 +104,6 @@ return static function (ECSConfig $ecsConfig): void {
             LowercaseCastFixer::class,
             MethodChainingIndentationFixer::class,
             NativeFunctionCasingFixer::class,
-            NativeConstantInvocationFixer::class,
             NewWithBracesFixer::class,
             ModernizeTypesCastingFixer::class,
             NoEmptyStatementFixer::class,
