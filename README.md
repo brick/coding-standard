@@ -100,14 +100,14 @@ jobs:
     uses: brick/coding-standard/.github/workflows/coding-standard.yml@v1
 ```
 
-By default, this workflow will run on PHP 8.1. You can change the PHP version by adding:
+By default, this workflow will run on PHP 8.2. You can change the PHP version by adding:
 
 ```yaml
     with:
-      php-version: 8.2
+      php-version: 8.5
 ```
 
-Only versions >= `8.1` are supported.
+Only versions >= `8.2` are supported.
 
 Other options available are:
 
