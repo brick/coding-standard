@@ -16,7 +16,7 @@ This coding standard is used in Brick libraries, but can also be used in your ow
 It is based on [PSR-12](https://www.php-fig.org/psr/psr-12/) and uses
 [Easy Coding Standard](https://github.com/easy-coding-standard/easy-coding-standard) with
 rules cherry-picked from [PHP-CS-Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer),
-[PHP_CodeSniffer](http://github.com/squizlabs/PHP_CodeSniffer), and the
+[PHP_CodeSniffer](https://github.com/PHPCSStandards/PHP_CodeSniffer), and the
 [Slevomat coding standard](https://github.com/slevomat/coding-standard).
 
 ## Release process
